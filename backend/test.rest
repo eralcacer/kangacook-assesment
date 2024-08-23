@@ -1,0 +1,34 @@
+### Sign up user
+
+POST http://127.0.0.1:8080/sign-up/
+Content-Type: application/json
+
+{"username": "enrique3", "email": "enrique3@email.com", "password": "password123", "first_name": "Enrique", "last_name": "Alcacer"}
+
+### Login
+
+POST http://127.0.0.1:8080/login/
+Content-Type: application/json
+
+{"username": "enrique", "email": "enrique@email.com", "password": "password123"}
+
+### Authenticate with token
+
+GET http://127.0.0.1:8080/authenticate/
+Content-Type: application/json
+Authorization: Token f1bd8bde6de3b303e818afcc60f22c54cc8df5f6
+
+### Get users list
+
+GET http://127.0.0.1:8080/users/
+Content-Type: application/json
+
+
+### GET recipes list
+GET http://127.0.0.1:8080/recipes/?page=2
+Content-Type: application/json
+
+### GET recipe by id
+GET http://127.0.0.1:8080/recipe/20
+Content-Type: application/json
+
