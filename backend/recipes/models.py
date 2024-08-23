@@ -1,11 +1,9 @@
-# from django.db import models
+from django.db import models
 
-# class User(models.Model):
-#     name = models.CharField(max_length=50)
-#     last_name = models.CharField(max_length=50)
-#     email = models.CharField(max_length=100, unique=True)
-#     password = models.CharField(max_length=24)
-#     salt = models.CharField(max_length=64, default='')
+class Recipe(models.Model):
+    title = models.CharField(max_length=50)
+    description = models.CharField(max_length=500)
+    image = models.ImageField(null=True, blank=True, upload_to="images/")
 
-#     def __str__(self) -> str:
-#         return self.name + " " + self.last_name + " " + self.email
+    def __str__(self) -> str:
+        return self.title

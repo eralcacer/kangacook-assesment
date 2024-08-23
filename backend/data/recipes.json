@@ -1,0 +1,164 @@
+{
+  "recipes": [
+    {
+      "title": "Spaghetti Bolognese",
+      "description": "A classic Italian pasta dish with rich, savory meat sauce."
+    },
+    {
+      "title": "Chicken Alfredo",
+      "description": "Creamy pasta with grilled chicken and a rich Alfredo sauce."
+    },
+    {
+      "title": "Beef Tacos",
+      "description": "Tasty beef tacos with fresh lettuce, tomato, and cheese."
+    },
+    {
+      "title": "Vegetable Stir-Fry",
+      "description": "Crisp vegetables stir-fried in a flavorful soy-ginger sauce."
+    },
+    {
+      "title": "Margherita Pizza",
+      "description": "Traditional pizza topped with fresh tomatoes, mozzarella, and basil."
+    },
+    {
+      "title": "Grilled Salmon",
+      "description": "Delicious grilled salmon with lemon and herbs."
+    },
+    {
+      "title": "Caesar Salad",
+      "description": "A fresh and crunchy Caesar salad with homemade dressing."
+    },
+    {
+      "title": "Lamb Kebabs",
+      "description": "Juicy lamb skewers with a Mediterranean herb marinade."
+    },
+    {
+      "title": "Shrimp Scampi",
+      "description": "Garlicky shrimp served over a bed of linguine pasta."
+    },
+    {
+      "title": "Vegetarian Chili",
+      "description": "A hearty chili made with beans, tomatoes, and spices."
+    },
+    {
+      "title": "Chicken Curry",
+      "description": "Spicy and flavorful chicken curry in a rich coconut sauce."
+    },
+    {
+      "title": "Eggplant Parmesan",
+      "description": "Baked eggplant with marinara sauce and melted cheese."
+    },
+    {
+      "title": "Fish Tacos",
+      "description": "Grilled fish tacos topped with fresh salsa and creamy sauce."
+    },
+    {
+      "title": "French Onion Soup",
+      "description": "Classic French onion soup with caramelized onions and melted cheese."
+    },
+    {
+      "title": "Stuffed Bell Peppers",
+      "description": "Bell peppers stuffed with rice, ground beef, and spices."
+    },
+    {
+      "title": "BBQ Ribs",
+      "description": "Tender, fall-off-the-bone ribs with a smoky BBQ sauce."
+    },
+    {
+      "title": "Pancakes",
+      "description": "Fluffy pancakes served with maple syrup and butter."
+    },
+    {
+      "title": "Garlic Bread",
+      "description": "Toasted bread with a generous amount of garlic and butter."
+    },
+    {
+      "title": "Lasagna",
+      "description": "Layered lasagna with ground beef, ricotta, and tomato sauce."
+    },
+    {
+      "title": "Chicken Parmesan",
+      "description": "Breaded chicken cutlets topped with marinara sauce and melted cheese."
+    },
+    {
+      "title": "Spaghetti Bolognese",
+      "description": "A classic Italian pasta dish with rich, savory meat sauce."
+    },
+    {
+      "title": "Chicken Alfredo",
+      "description": "Creamy pasta with grilled chicken and a rich Alfredo sauce."
+    },
+    {
+      "title": "Beef Stroganoff",
+      "description": "Tender strips of beef in a creamy mushroom sauce served over noodles."
+    },
+    {
+      "title": "Vegetarian Lasagna",
+      "description": "Layers of pasta, vegetables, and cheese in a hearty tomato sauce."
+    },
+    {
+      "title": "Chicken Curry",
+      "description": "A spicy and flavorful Indian dish made with chicken, spices, and coconut milk."
+    },
+    {
+      "title": "Grilled Salmon",
+      "description": "Fresh salmon fillets grilled to perfection with a lemon herb marinade."
+    },
+    {
+      "title": "Quinoa Salad",
+      "description": "A healthy and refreshing salad made with quinoa, vegetables, and a light dressing."
+    },
+    {
+      "title": "BBQ Ribs",
+      "description": "Slow-cooked pork ribs coated in a sweet and tangy barbecue sauce."
+    },
+    {
+      "title": "Shrimp Scampi",
+      "description": "Juicy shrimp cooked in a garlic butter sauce and served over pasta."
+    },
+    {
+      "title": "Tacos al Pastor",
+      "description": "Mexican street tacos filled with marinated pork, pineapple, and fresh cilantro."
+    },
+    {
+      "title": "Pancakes",
+      "description": "Fluffy pancakes served with maple syrup and a side of fresh fruit."
+    },
+    {
+      "title": "Caprese Salad",
+      "description": "A simple Italian salad made with fresh mozzarella, tomatoes, and basil."
+    },
+    {
+      "title": "Pulled Pork Sandwich",
+      "description": "Slow-cooked pulled pork served on a bun with coleslaw and BBQ sauce."
+    },
+    {
+      "title": "Eggplant Parmesan",
+      "description": "Breaded eggplant slices layered with marinara sauce and mozzarella cheese."
+    },
+    {
+      "title": "Beef Tacos",
+      "description": "Crispy taco shells filled with seasoned ground beef, lettuce, cheese, and salsa."
+    },
+    {
+      "title": "Chicken Caesar Salad",
+      "description": "Romaine lettuce topped with grilled chicken, croutons, and Caesar dressing."
+    },
+    {
+      "title": "Margherita Pizza",
+      "description": "A classic pizza with fresh tomatoes, mozzarella cheese, and basil."
+    },
+    {
+      "title": "Lamb Kebabs",
+      "description": "Grilled lamb skewers marinated with Middle Eastern spices and served with tzatziki sauce."
+    },
+    {
+      "title": "Vegetable Stir-Fry",
+      "description": "A mix of colorful vegetables stir-fried with soy sauce and served over rice."
+    },
+    {
+      "title": "Chocolate Cake",
+      "description": "A rich and moist chocolate cake topped with creamy chocolate frosting."
+    }
+  ]
+}

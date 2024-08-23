@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
+from .models import Recipe
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -8,3 +9,13 @@ class UserSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'password': {'write_only': True}
         }
+
+class RecipeListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Recipe
+        fields = ['id', 'title', 'image']
+
+class RecipeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Recipe
+        fields = ['id', 'title', 'description', 'image']

@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from recipes import views
 
 urlpatterns = [
@@ -23,5 +25,7 @@ urlpatterns = [
     path('users/', views.user_list),
     path('sign-up/', views.signup),
     path('login/', views.login),
-    path('authenticate/', views.authenticate)
-]
+    path('authenticate/', views.authenticate),
+    path('recipes/', views.get_recipes),
+    path('recipe/<int:recipe_id>/', views.get_recipe_by_id)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

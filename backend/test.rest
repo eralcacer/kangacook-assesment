@@ -22,3 +22,13 @@ Authorization: Token f1bd8bde6de3b303e818afcc60f22c54cc8df5f6
 
 GET http://127.0.0.1:8080/users/
 Content-Type: application/json
+
+
+### GET recipes list
+GET http://127.0.0.1:8080/recipes/?page=2
+Content-Type: application/json
+
+### GET recipe by id
+GET http://127.0.0.1:8080/recipe/20
+Content-Type: application/json
+
