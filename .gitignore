@@ -18,3 +18,5 @@ venv
 # Django stuff:
 *.log
 local_settings.py
+
+node_modules
