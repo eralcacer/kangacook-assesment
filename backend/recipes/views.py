@@ -47,7 +47,16 @@ def signup(request):
                 user.set_password(request.data['password'])
                 user.save()
                 token = Token.objects.create(user=user)
-                return Response({"success": True, "token": token.key, "user": serializer.data}, status=status.HTTP_201_CREATED)
+                response = Response({"success": True, "token": token.key, "user": serializer.data}, status=status.HTTP_201_CREATED)
+                response.set_cookie(
+                key='auth_token',
+                value=token.key,
+                httponly=True,
+                secure=False,
+                samesite='Lax'
+                )
+
+                return response
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     except Exception as e:
@@ -78,7 +87,6 @@ def login(request):
         
             if user is None:
                 return Response({"success": False, "msg": "Invalid username or email."}, status=status.HTTP_401_UNAUTHORIZED)
-            
             # Check the password
             if not user.check_password(password):
                 return Response({"success": False, "msg": "Unable to sign in."}, status=status.HTTP_401_UNAUTHORIZED)
@@ -96,7 +104,7 @@ def login(request):
                 key='auth_token',
                 value=token.key,
                 httponly=True,
-                secure=True,
+                secure=False,
                 samesite='Lax'
             )
 
@@ -109,7 +117,7 @@ def login(request):
         return Response({"error": "Something went wrong trying to login."}, status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['GET'])
-@authentication_classes([SessionAuthentication, TokenAuthentication])
+@authentication_classes([TokenAuthentication, SessionAuthentication, TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def authenticate(request):
     try:
@@ -130,6 +138,11 @@ def authenticate(request):
             "error": "Something went wrong trying to authenticate."
         }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
+@api_view(['POST'])
+def logout(request):
+    response = JsonResponse({'success': True, 'message': 'Logged out successfully'})
+    response.delete_cookie('auth_token', path='/')
+    return response
 
 @api_view(['GET'])
 def get_recipes(request):

@@ -1,9 +1,16 @@
+import Account from "../../pages/Account";
 import Home from "../../pages/Home";
 import Login from "../../pages/Login";
 import SignUp from "../../pages/SignUp";
 
 export const nav = [
-  { path: "/", name: "Home", element: <Home />, isMenu: true, isPrivate: true },
+  {
+    path: "/",
+    name: "Home",
+    element: <Home />,
+    isMenu: true,
+    isPrivate: false,
+  },
   {
     path: "/login",
     name: "Login",
@@ -17,5 +24,12 @@ export const nav = [
     element: <SignUp />,
     isMenu: false,
     isPrivate: false,
+  },
+  {
+    path: "/account",
+    name: "Account",
+    element: <Account />,
+    isMenu: true,
+    isPrivate: true,
   },
 ];

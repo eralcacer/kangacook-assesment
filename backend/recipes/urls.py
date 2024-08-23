@@ -25,6 +25,7 @@ urlpatterns = [
     path('users/', views.user_list),
     path('sign-up/', views.signup),
     path('login/', views.login),
+    path('logout/', views.logout),
     path('authenticate/', views.authenticate),
     path('recipes/', views.get_recipes),
     path('recipe/<int:recipe_id>/', views.get_recipe_by_id)
